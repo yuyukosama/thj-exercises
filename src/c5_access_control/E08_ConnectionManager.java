@@ -32,7 +32,6 @@ public class E08_ConnectionManager {
     public static Connection getConnection() {
         if (howManyLeft > 0) {
             return ca[--howManyLeft];
-            ca[howManyLeft + 1] = null;
 
         } else {
             System.out.println("No more connections!");
